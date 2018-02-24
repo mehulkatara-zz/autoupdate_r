@@ -14,8 +14,8 @@ can_internet <- function(url = "http://www.google.com") {
 
 if (can_internet()==TRUE)
 {
-  update <- read_csv("https://raw.githubusercontent.com/mehulkatara/excel2tableau/master/update.csv",col_names = FALSE)
-  url="https://raw.githubusercontent.com/mehulkatara/excel2tableau/master/batch.R"
+  update <- read_csv("https://raw.githubusercontent.com/mehulkatara/autoupdate_r/master/update.csv",col_names = FALSE)
+  url="https://raw.githubusercontent.com/mehulkatara/autoupdate_r/master/r.R"
   file=basename(url)
   
   if (update[1,2]==1)
